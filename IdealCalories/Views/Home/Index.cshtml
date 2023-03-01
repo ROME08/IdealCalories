@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<main>
+    <h1 class="subtitle">Calorie Calculator</h1>
+    <p class="detail">
+        This webpage is to help you calculate your ideal calorie intake.
+    </p>
+    <div class="BMR-Container">
+
+        <!-- <div class="BMR-title">
+            Let's calculate your ideal calorie intake.
+        </div> -->
+
+        <div class="unitField">
+            <input class="numDecimal" placeholder="Weight" />
+            <ul class="unitGroup">
+                <li class="unitValue">lb</li>
+                <li class="unitValue">kg</li>
+            </ul>
+
+        </div>
+        <div class="unitField">
+            <input class="numDecimal" placeholder="Height" />
+            <ul class="unitGroup">
+                <li class="unitValue">ft\in</li>
+                <li class="unitValue">m</li>
+            </ul>
+        </div>
+
+        <input class="numWhole" placeholder="Years Old" />
+
+        <div class="genderSelection">
+            <label class="genderTitle" for="rdButtons">Gender</label>
+            <div class="rdButtons">
+                <input name="gender" type="radio" value="man" id="man">
+                <label for="man">Man</label>
+                <input name="gender" type="radio" value="woman" id="woman">
+                <label for="woman">Woman</label>
+            </div>
+        </div>
+
+        <select class="multiActivity" name="" id="">
+            <option value="physicalActivity">Sedentary</option>
+            <option value="physicalActivity">Lightly active</option>
+            <option value="physicalActivity">Moderately active</option>
+            <option value="physicalActivity">Very active</option>
+            <option value="physicalActivity">Extremely active</option>
+        </select>
+
+    </div>
+</main>
