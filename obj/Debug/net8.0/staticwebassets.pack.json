@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.IdealCalories.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.IdealCalories.props",
+      "PackagePath": "build\\IdealCalories.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.IdealCalories.props",
+      "PackagePath": "buildMultiTargeting\\IdealCalories.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.IdealCalories.props",
+      "PackagePath": "buildTransitive\\IdealCalories.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

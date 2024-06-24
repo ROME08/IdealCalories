@@ -1,0 +1,49 @@
+/* _content/IdealCalories/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-wix8wd60fb] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-wix8wd60fb] {
+  color: #0077cc;
+}
+
+.btn-primary[b-wix8wd60fb] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-wix8wd60fb], .nav-pills .show > .nav-link[b-wix8wd60fb] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-wix8wd60fb] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-wix8wd60fb] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-wix8wd60fb] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-wix8wd60fb] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-wix8wd60fb] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
