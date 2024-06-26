@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kK+7wq1OQH7uQaumZ8EKnjPlx2sSKBjmFXuJz9801DQ=",
+  "Hash": "Q5ja9boppsdtUoUECBTf2dQZCFWvehZw/zg8pau9LoI=",
   "Source": "IdealCalories",
   "BasePath": "_content/IdealCalories",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "IdealCalories\\wwwroot",
       "Source": "IdealCalories",
-      "ContentRoot": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
       "BasePath": "_content/IdealCalories",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\style.css",
       "SourceId": "IdealCalories",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
       "BasePath": "_content/IdealCalories",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\favicon.ico",
       "SourceId": "IdealCalories",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
       "BasePath": "_content/IdealCalories",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

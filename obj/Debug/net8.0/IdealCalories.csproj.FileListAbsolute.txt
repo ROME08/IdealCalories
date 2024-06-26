@@ -26,3 +26,4 @@ C:\Users\romer\OneDrive\Desktop\Full Stack Developer Map\myProjects\IdealCalorie
 C:\Users\romer\OneDrive\Desktop\Full Stack Developer Map\myProjects\IdealCalories\obj\Debug\net8.0\IdealCalories.pdb
 C:\Users\romer\OneDrive\Desktop\Full Stack Developer Map\myProjects\IdealCalories\obj\Debug\net8.0\IdealCalories.genruntimeconfig.cache
 C:\Users\romer\OneDrive\Desktop\Full Stack Developer Map\myProjects\IdealCalories\obj\Debug\net8.0\ref\IdealCalories.dll
+C:\Users\romer\OneDrive\Desktop\Full Stack Developer Map\myProjects\IdealCalories\obj\Debug\net8.0\IdealCalories.sourcelink.json

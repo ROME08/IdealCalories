@@ -9,11 +9,30 @@
 
 *
 {
-    font-family: "roboto", sans-serif;
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body
+{
     width:100%;
 }
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 350px;
+    width:100%;
+    margin:0 auto;
+    row-gap: 2em;
+    margin-top: 2em;
+}
+
 
 .header
 {
@@ -26,4 +45,143 @@
 {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+
+.outline-form
+{
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    min-width: 350px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--form-bg-color);
+}
+
+.title-form
+{
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-bottom: 1px solid black;
+}
+
+h2
+{
+    background-color: var(--primary-color);
+    width:100%;
+}
+
+
+.input-form
+{
+    width:100%;
+    padding-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.5em;
+}
+
+
+
+.tabs
+{
+    display: flex;
+    background-color: var(--text-color);
+    color: var(--form-bg-color);
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0.4em 0;
+}
+
+.tabs label
+{
+    cursor: pointer;
+}
+
+.tabs label:hover
+{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.tabs input
+{
+    display: none;
+}
+
+.tabs input:checked + label
+{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    row-gap: 0.4em;
+}
+
+.row input
+{
+    padding:0.5em 0.2em;
+    width:80%;
+    text-align: right;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+}
+
+.row .input-field
+{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    font-size: 14px;
+    padding-right: 0.4em;
+    width: 80%;
+    min-width: 300px;
+}
+
+input.col
+{
+    flex-grow: 5;
+    padding-top: 0.7em;
+    border-radius: 5px;
+}
+
+select.activity-levels
+{
+    padding: 0.5em;
+    width: 80%;
+    min-width: 300px;
+}
+
+button.calculate
+{
+    padding: 1em 0;
+    
+    font-weight: 900;
+    color:var(--form-bg-color);
+    background-color: var(--primary-color);
+
+    width:50%;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    z-index: 2;
+    transition: 0.22s ease-in;
+}
+
+button.calculate:hover
+{
+    background-color: var(--text-color);
+    color: var(--form-bg-color);
 }

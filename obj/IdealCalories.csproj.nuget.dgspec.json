@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj": {}
+    "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj": {
+    "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj",
+        "projectUniqueName": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj",
         "projectName": "IdealCalories",
-        "projectPath": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj",
+        "projectPath": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\IdealCalories.csproj",
         "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romer\\OneDrive\\desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\obj\\",
+        "outputPath": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\romer\\AppData\\Roaming\\NuGet\\NuGet.Config",
