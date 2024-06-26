@@ -185,3 +185,8 @@ button.calculate:hover
     background-color: var(--text-color);
     color: var(--form-bg-color);
 }
+
+.inactive
+{
+    display: none;
+}

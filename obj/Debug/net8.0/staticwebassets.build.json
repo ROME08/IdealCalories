@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q5ja9boppsdtUoUECBTf2dQZCFWvehZw/zg8pau9LoI=",
+  "Hash": "+6u5KHrT5461yr8rMSkohXMlIqHAeVwY/NuVv2h2kCw=",
   "Source": "IdealCalories",
   "BasePath": "_content/IdealCalories",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\js\\script.js",
+      "SourceId": "IdealCalories",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "BasePath": "_content/IdealCalories",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     }
   ]
 }
