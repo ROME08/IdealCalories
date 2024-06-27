@@ -151,12 +151,12 @@ h2
     min-width: 300px;
 }
 
-input.col
+/* input.col
 {
     flex-grow: 5;
     padding-top: 0.7em;
     border-radius: 5px;
-}
+} */
 
 select.activity-levels
 {
@@ -189,4 +189,12 @@ button.calculate:hover
 .inactive
 {
     display: none;
+}
+
+.col
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
 }

@@ -1,4 +1,3 @@
-alert("working");
 
 const usUnits = document.querySelector("#usUnits");
 const metricUnits = document.querySelector("#metricUnits");
