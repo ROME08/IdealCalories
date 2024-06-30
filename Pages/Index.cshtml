@@ -8,14 +8,14 @@
         
         <h2 class="title-form">Input your Measurements</h2>
 
-        <form action="" class="input-form">
+        <form method="post" class="input-form">
             
             <div class="tabs">
 
-                <input type="radio" name="units" id="usUnits" checked>
+                <input asp-for="bmrModel.Units" value="us" type="radio"  id="usUnits" checked>
                 <label for="usUnits">US Units</label>
 
-                <input type="radio" name="units" id="metricUnits">
+                <input asp-for="bmrModel.Units" value="metric" type="radio"  id="metricUnits">
                 <label for="metricUnits">Metric Units</label>
 
             </div>
@@ -24,11 +24,11 @@
                 <label class="" for="">Height</label>
                 
                 <div class="input-field">
-                    <input type="number" class="" min="0">
+                    <input asp-for="bmrModel.Heightft" type="number" class="" min="0" value=5 >
                     <span>feet</span>    
                 </div>
                 <div class="input-field">
-                    <input type="number" class="" min="0">
+                    <input asp-for="bmrModel.Heightin"  type="number" class="" min="0" value=7 >
                     <span>inches</span>
                 </div>
             </div>
@@ -36,16 +36,24 @@
             <div class="row inactive" id="heightMetric">
                 <label for="">Height</label>
                 <div class="input-field">
-                    <input type="number" class="" min="0">
+                    <input asp-for="bmrModel.Heightcm"  type="number" class="" min="0" value=172 >
                     <span>cm</span>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="weightUS">
                 <label for="">Weight</label>
                 <div class="input-field">
-                    <input type="number" class="" min="0">
-                    <span id="weightUnits">lbs</span>
+                    <input asp-for="bmrModel.Weightlbs"  type="number" class="" min="0" value=140 >
+                    <span>lbs</span>
+                </div>
+            </div>
+
+            <div class="row inactive" id="weightKG">
+                <label for="">Weight</label>
+                <div class="input-field">
+                    <input asp-for="bmrModel.Weightkg"  type="number" class="" min="0" value=64 >
+                    <span>kg</span>
                 </div>
             </div>
 
@@ -54,11 +62,11 @@
                 <div class="col">    
                     <div class="col">
                         <label for="male">Male</label>  
-                        <input type="radio" name="gender" id="male" checked>
+                        <input asp-for="bmrModel.Gender" value="male" type="radio"  id="male" checked>
                     </div>
                     <div class="col">
                         <label for="female">Female</label>
-                        <input type="radio" name="gender" id="female">
+                        <input asp-for="bmrModel.Gender" value="female" type="radio"  id="female">
                     </div>
                 </div>
             </div>
@@ -66,23 +74,23 @@
             <div class="row">
                 <label for="">Activity Level</label>
                 
-                <select name="" id="" class="activity-levels">
-                            <option value="1">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
+                <select asp-for="bmrModel.Activity"  id="" class="activity-levels">
+                            <option value="1">Sedentary (little or no exercise): BMR x 1.2
                             </option>
-                            <option value="2">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
+                            <option value="2">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
+                            </option>
+                            <option value="3">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
                                 1.55
                             </option>
-                            <option value="3">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
+                            <option value="4">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
                             </option>
-                            <option value="4">Extra active (very hard exercise or sports, physical job or training twice
-                                a
-                                day)
+                            <option value="5">Extra active (very hard exercise or sports, physical job or training twice a day): BMR × 1.9
                             </option>
                 </select>                
             </div>
 
 
-            <button class="calculate row">Calories</button>
+            <button type="submit" class="calculate row">Calories</button>
 
 
         </form>
