@@ -25,18 +25,18 @@
                 
                 <div class="input-field">
                     <input asp-for="bmrModel.Heightft" type="number" class="" min="0" value=5 >
-                    <span>feet</span>    
+                    <span>ft</span>    
                 </div>
                 <div class="input-field">
                     <input asp-for="bmrModel.Heightin"  type="number" class="" min="0" value=7 >
-                    <span>inches</span>
+                    <span>in</span>
                 </div>
             </div>
 
             <div class="row inactive" id="heightMetric">
                 <label for="">Height</label>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Heightcm"  type="number" class="" min="0" value=172 >
+                    <input asp-for="bmrModel.Heightcm"  type="number" class="" min="0" value=170 >
                     <span>cm</span>
                 </div>
             </div>
@@ -54,6 +54,14 @@
                 <div class="input-field">
                     <input asp-for="bmrModel.Weightkg"  type="number" class="" min="0" value=64 >
                     <span>kg</span>
+                </div>
+            </div>
+
+            <div class="row" id="">
+                <label for="">Age</label>
+                <div class="input-field">
+                    <input asp-for="bmrModel.Age"  type="number" class="" min="0" value=25 >
+                    <span>years</span>
                 </div>
             </div>
 

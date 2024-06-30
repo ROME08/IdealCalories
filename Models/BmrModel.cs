@@ -17,6 +17,8 @@ public class BmrModel
     [Required]
     public int Weightkg {get; set;} = 0;
     [Required]
+    public int Age {get; set;} = 0;
+    [Required]
     public required string Gender {get; set;}
     public required int Activity {get; set;}
 
@@ -38,10 +40,10 @@ public class BmrModel
 
         if(Gender == "male")
         {
-            bmr += 88.362 + (13.397*weight) + (4.799*height) - (5.677*25);
+            bmr += 88.362 + (13.397*weight) + (4.799*height) - (5.677*Age);
         }else
         {
-            bmr += 447.593 + (9.247*weight) + (3.098*height) - (4.33);
+            bmr += 447.593 + (9.247*weight) + (3.098*height) - (4.33*Age);
         }
         
         switch(Activity)
