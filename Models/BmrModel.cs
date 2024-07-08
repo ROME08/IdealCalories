@@ -1,4 +1,6 @@
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using IdealCalories.Services;
 
 
@@ -20,52 +22,31 @@ public class BmrModel
     public int Age {get; set;} = 0;
     [Required]
     public required string Gender {get; set;}
-    public required int Activity {get; set;}
+    public int BMR {get; set;} = 0;
+    public int TDEE {get; set;} = 0;
+    public required int ActivityOption {get; set;}
+    public double ActivityFactor {get; set;}
 
-    public double bmrCalculate()
+    public void assignActivityFactor()
     {
-        double bmr = 0;
-        double height;
-        double weight;
-        if(Units == "us")
-        {
-            height = ConversionService.ft_inchesconvert_cm(Heightft, Heightin);
-            weight = ConversionService.lbsconvert_kg(Weightlbs);  
-        }
-        else
-        {
-            height = Heightcm;
-            weight = Weightkg;
-        }
-
-        if(Gender == "male")
-        {
-            bmr += 88.362 + (13.397*weight) + (4.799*height) - (5.677*Age);
-        }else
-        {
-            bmr += 447.593 + (9.247*weight) + (3.098*height) - (4.33*Age);
-        }
-        
-        switch(Activity)
+        switch(ActivityOption)
         {
             case 1: 
-                bmr *= 1.2;
+                ActivityFactor = 1.2;
             break;
-            case 2:
-                bmr *= 1.375;
+            case 2: 
+                ActivityFactor = 1.375;
             break;
             case 3:
-                bmr *= 1.55;
+                ActivityFactor = 1.55;
             break;
             case 4:
-                bmr *= 1.725;
+                ActivityFactor = 1.725;
             break;
             case 5:
-                bmr *= 1.9;
+                ActivityFactor = 1.9;
             break;
         }
-
-        return bmr;
     }
 
 }

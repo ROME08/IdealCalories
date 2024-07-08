@@ -1,0 +1,36 @@
+@model IndexModel
+
+<div class="col">
+
+    <div class="">
+        <h1>Basal Metabolic Rate:</h1>
+        <span style="font-size: 16px; font-weight:10;">The amount of calories to sustain your weight. </span>
+        <span><br />@Model.bmrModel.BMR Calories</span>
+
+            <br/><br/>
+
+        <h2>Total Daily Energy Expenditure: <br /></h2>
+        <span style="font-size: 16px; font-weight:10;">The amount of calories your body burns with your current activity level. </span>
+        <span><br />@Model.bmrModel.TDEE Calories</span>
+    </div>
+
+    <div>
+        <table class="bmr-table">
+            <thead>
+                <th>Weight Goal</th>
+                <th>Daily Calorie Intake</th>
+            </thead>
+            @{
+                foreach (var line in @Model.calorieGuideLine)
+                {
+                    <tr class="bmr-data">
+                        <td style="padding:0px;margin:0px;">@line.description</td>
+                        <td style="padding:10px 50px;margin:0px;">@line.daily <span style="font-size: 11px;">Calories/Day</span>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+</div>

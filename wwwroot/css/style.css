@@ -69,12 +69,6 @@ body
     border-bottom: 1px solid black;
 }
 
-h2
-{
-    background-color: var(--primary-color);
-    width:100%;
-}
-
 
 .input-form
 {
@@ -198,6 +192,32 @@ button.calculate:hover
     flex-direction: row;
     width: 50%;
     justify-content: space-between;
+}
+
+.bmr-table{
+    max-height: 200px;
+    width:25%;
+    border-collapse: collapse;
+    border: 3px solid var(--text-color);
+}
+
+.bmr-table th{
+    padding: 1em;
+    background-color: #222831;
+    color:#FAF9F6;
+    font-weight: lighter;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.bmr-table th:first-child{
+    border-right: 2px solid #FAF9F6;
+}
+
+.bmr-table .bmr-data td{
+    padding:1em 0;
+    text-align: center;
+    border-right: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
 }
 
 input::-webkit-outer-spin-button,
