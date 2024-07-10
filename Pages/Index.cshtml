@@ -2,33 +2,34 @@
 @model IndexModel
 
 
+
 <div class="content">
 
     <div class="outline-form">
-        
+
         <h2 class="title-form">Input your Measurements</h2>
 
         <form method="post" class="input-form">
-            
+
             <div class="tabs">
 
-                <input asp-for="bmrModel.Units" value="us" type="radio"  id="usUnits" checked>
+                <input asp-for="bmrModel.Units" value="us" type="radio" id="usUnits"  checked="@(Model.bmrModel.Units == "us")" />
                 <label for="usUnits">US Units</label>
 
-                <input asp-for="bmrModel.Units" value="metric" type="radio"  id="metricUnits">
+                <input asp-for="bmrModel.Units" value="metric" type="radio" id="metricUnits" checked="@(Model.bmrModel.Units == "metric")" />
                 <label for="metricUnits">Metric Units</label>
 
             </div>
 
             <div class="row" id="heightUS">
                 <label class="" for="">Height</label>
-                
+
                 <div class="input-field">
-                    <input asp-for="bmrModel.Heightft" type="number" class="" min="0" value=5 >
-                    <span>ft</span>    
+                    <input asp-for="bmrModel.Heightft" type="number" class="" min="0" value="@Model.bmrModel.Heightft">
+                    <span>ft</span>
                 </div>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Heightin"  type="number" class="" min="0" value=7 >
+                    <input asp-for="bmrModel.Heightin" type="number" class="" min="0" value="@Model.bmrModel.Heightin">
                     <span>in</span>
                 </div>
             </div>
@@ -36,7 +37,7 @@
             <div class="row inactive" id="heightMetric">
                 <label for="">Height</label>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Heightcm"  type="number" class="" min="0" value=170 >
+                    <input asp-for="bmrModel.Heightcm" type="number" class="" min="0" value="@Model.bmrModel.Heightcm">
                     <span>cm</span>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             <div class="row" id="weightUS">
                 <label for="">Weight</label>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Weightlbs"  type="number" class="" min="0" value=140 >
+                    <input asp-for="bmrModel.Weightlbs" type="number" class="" min="0" value="@Model.bmrModel.Weightlbs">
                     <span>lbs</span>
                 </div>
             </div>
@@ -52,7 +53,7 @@
             <div class="row inactive" id="weightKG">
                 <label for="">Weight</label>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Weightkg"  type="number" class="" min="0" value=64 >
+                    <input asp-for="bmrModel.Weightkg" type="number" class="" min="0" value="@Model.bmrModel.Weightkg">
                     <span>kg</span>
                 </div>
             </div>
@@ -60,41 +61,42 @@
             <div class="row" id="">
                 <label for="">Age</label>
                 <div class="input-field">
-                    <input asp-for="bmrModel.Age"  type="number" class="" min="0" value=25 >
+                    <input asp-for="bmrModel.Age" type="number" class="" min="0" value="@Model.bmrModel.Age">
                     <span>years</span>
                 </div>
             </div>
 
             <div class="row">
                 <label for="">Gender</label>
-                <div class="col">    
+                <div class="col">
                     <div class="col">
-                        <label for="male">Male</label>  
-                        <input asp-for="bmrModel.Gender" value="male" type="radio"  id="male" checked>
+                        <label for="male">Male</label>
+                        <input asp-for="bmrModel.Gender" value="male" type="radio" id="male" checked = "@(Model.bmrModel.Gender == "male")" />
                     </div>
                     <div class="col">
                         <label for="female">Female</label>
-                        <input asp-for="bmrModel.Gender" value="female" type="radio"  id="female">
+                        <input asp-for="bmrModel.Gender" value="female" type="radio" id="female" checked = "@(Model.bmrModel.Gender == "female")">
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <label for="">Activity Level</label>
-                
-                <select asp-for="bmrModel.ActivityOption"  id="" class="activity-levels">
-                            <option value="1">Sedentary (little or no exercise): BMR x 1.2
-                            </option>
-                            <option value="2">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
-                            </option>
-                            <option value="3">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
-                                1.55
-                            </option>
-                            <option value="4">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
-                            </option>
-                            <option value="5">Extra active (very hard exercise or sports, physical job or training twice a day): BMR × 1.9
-                            </option>
-                </select>                
+
+                <select asp-for="bmrModel.ActivityOption" id="" class="activity-levels">
+                    <option value="1">Sedentary (little or no exercise): BMR x 1.2
+                    </option>
+                    <option value="2">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
+                    </option>
+                    <option value="3">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
+                        1.55
+                    </option>
+                    <option value="4">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
+                    </option>
+                    <option value="5">Extra active (very hard exercise or sports, physical job or training twice a day):
+                        BMR × 1.9
+                    </option>
+                </select>
             </div>
 
 
@@ -104,19 +106,18 @@
         </form>
 
     </div>
-    
+
 
 </div>
+
 
 <div>
-    
+
     @{
-        if(@Model.IsFormSubmitted)
+        if (@Model.IsFormSubmitted)
         {
-           <partial name="partialBMRResults" model="Model" />
+            <partial name="partialBMRResults" model="Model" />
         }
     }
-    
+
 </div>
-
-

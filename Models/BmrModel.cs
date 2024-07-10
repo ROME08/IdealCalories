@@ -10,23 +10,21 @@ public class BmrModel
 {
 
     [Required]
-    public required string Units {get; set;}
-    public int Heightft {get; set;} = 0;
-    public int Heightin {get; set;} = 0;
-    public int Heightcm {get; set;} = 0;
-    [Required]
-    public int Weightlbs {get; set;} = 0;
-    [Required]
-    public int Weightkg {get; set;} = 0;
-    [Required]
-    public int Age {get; set;} = 0;
-    [Required]
-    public required string Gender {get; set;}
-    public int BMR {get; set;} = 0;
-    public int TDEE {get; set;} = 0;
-    public required int ActivityOption {get; set;}
-    public double ActivityFactor {get; set;}
+    public  string Units {get; set;} = "us";
+    public int Heightft {get; set;} = 5;
+    public int Heightin {get; set;} = 7;
+    public int Heightcm {get; set;} = 170;
+    public int Weightlbs {get; set;} = 140;
+    public int Weightkg {get; set;} = 64;
+    public int Age {get; set;} = 25;
+    public  string Gender {get; set;} = "male"; 
+    public int BMR {get; set;} 
+    public int TDEE {get; set;}
+    public  int ActivityOption {get; set;} = 1;
+    public double ActivityFactor {get; set;} = 1.2;
 
+
+  
     public void assignActivityFactor()
     {
         switch(ActivityOption)
