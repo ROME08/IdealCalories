@@ -4,7 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<BMRService>();
+builder.Services.AddTransient<BMIService>();
 builder.Services.AddTransient<CalorieService>();
+builder.Services.AddTransient<ConversionService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\bmiStyle.css",
+      "PackagePath": "staticwebassets\\css\\bmiStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\bmrStyle.css",
+      "PackagePath": "staticwebassets\\css\\bmrStyle.css"
+    },
+    {
       "Id": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },

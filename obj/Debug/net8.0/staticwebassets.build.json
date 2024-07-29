@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+6u5KHrT5461yr8rMSkohXMlIqHAeVwY/NuVv2h2kCw=",
+  "Hash": "enmaWYzMJvKn/ugCYxPjaEbOwdDpjgI1GedhN8NW1IM=",
   "Source": "IdealCalories",
   "BasePath": "_content/IdealCalories",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\bmiStyle.css",
+      "SourceId": "IdealCalories",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "BasePath": "_content/IdealCalories",
+      "RelativePath": "css/bmiStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bmiStyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\bmrStyle.css",
+      "SourceId": "IdealCalories",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\",
+      "BasePath": "_content/IdealCalories",
+      "RelativePath": "css/bmrStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bmrStyle.css"
+    },
     {
       "Identity": "C:\\Users\\romer\\OneDrive\\Desktop\\Full Stack Developer Map\\myProjects\\IdealCalories\\wwwroot\\css\\style.css",
       "SourceId": "IdealCalories",

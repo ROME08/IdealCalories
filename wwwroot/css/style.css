@@ -21,24 +21,35 @@ body
 }
 
 .content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: block;
+}
+
+.top-content{
+    margin: 2em 0;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    min-width: 350px;
-    width:100%;
-    margin:0 auto;
-    row-gap: 2em;
-    margin-top: 1em;
+    flex-wrap: wrap;
+    gap: 7em;
+    padding-left: 7em;
+}
+
+.bottom-content{
+    margin: 7em auto;
+    max-width: 1200px;
+    width: 90%;
+    padding-left: 7em;
 }
 
 
 .header
 {
     display: flex;
+    justify-content: center;
+    margin-top: 1em;
     border-bottom: 3px solid var(--text-color);
     padding-top: 0.3em;
+    
 }
 
 .header h1 a
@@ -55,7 +66,8 @@ body
     align-items: center;
     text-align: center;
     width: 25%;
-    min-width: 350px;
+    min-width: 500px;
+   
     border: 1px solid var(--text-color);
     border-radius: 5px;
     background-color: var(--form-bg-color);
@@ -196,7 +208,8 @@ button.calculate:hover
 
 .bmr-table{
     max-height: 200px;
-    width:25%;
+    width:35%;
+    min-width: 500px;
     border-collapse: collapse;
     border: 3px solid var(--text-color);
 }
@@ -219,6 +232,7 @@ button.calculate:hover
     border-right: 3px solid var(--text-color);
     border-bottom: 3px solid var(--text-color);
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

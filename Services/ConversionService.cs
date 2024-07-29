@@ -6,30 +6,41 @@ namespace IdealCalories.Services
 {
     public class ConversionService
     {
-        public static double kgconvert_lbs(int kg)
+        public int lbsconvert_kg(int lbs)
         {
-            return Convert.ToInt32(2.20462*kg);
+            return Convert.ToInt32(lbs / 2.20462);
         }
 
-        public static double lbsconvert_kg(int lbs)
+        public int ft_inchesconvert_cm(int ft, int inches)
         {
-            return Convert.ToInt32(lbs/2.20462);
+            inches += ft * 12;
+            return Convert.ToInt32(inches / 0.393701);
         }
 
-        public static double cmconvert_inches(int cm)
+        public double cmconvert_m(int cm)
         {
-            return Convert.ToInt32(cm*0.393701);
+            return (cm / 100.00);
         }
 
-        public static double ft_inchesconvert_cm(int ft, int inches)
+
+        //
+        public int cmconvert_ft(int cm)
         {
-             inches += ft * 12;
-             return Convert.ToInt32(inches/0.393701);
+            int ft = Convert.ToInt32(cm / 30.48);
+            return (ft);
+        }
+        public int cmconvert_in(int cm)
+        {
+            int inches = Convert.ToInt32(cm / 2.54);
+            inches = inches % 12;
+            return (inches);
+        }
+        public int kgconvert_lbs(int kg)
+        {
+            int lbs = Convert.ToInt32(kg * 2.20462);
+            return (lbs);
         }
 
-        public static double inchesconvert_cm(int inches)
-        {
-            return Convert.ToInt32(inches/0.393701);
-        }
+
     }
 }

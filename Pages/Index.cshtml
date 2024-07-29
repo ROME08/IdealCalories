@@ -1,123 +1,152 @@
 ﻿@page
 @model IndexModel
 
-
-
 <div class="content">
 
-    <div class="outline-form">
+    <div class="top-content">
 
-        <h2 class="title-form">Input your Measurements</h2>
 
-        <form method="post" class="input-form">
+        <div class="outline-form">
 
-            <div class="tabs">
+            <h2 class="title-form">Input your Measurements</h2>
 
-                <input asp-for="bmrModel.Units" value="us" type="radio" id="usUnits"  checked="@(Model.bmrModel.Units == "us")" />
-                <label for="usUnits">US Units</label>
+            <form method="post" class="input-form">
 
-                <input asp-for="bmrModel.Units" value="metric" type="radio" id="metricUnits" checked="@(Model.bmrModel.Units == "metric")" />
-                <label for="metricUnits">Metric Units</label>
+                <div class="tabs">
 
-            </div>
+                    <input asp-for="measurementsModel.Units" value="us" type="radio" id="usUnits"
+                        checked="@(Model.measurementsModel.Units == "us")" />
+                    <label for="usUnits">US Units</label>
 
-            <div class="row" id="heightUS">
-                <label class="" for="">Height</label>
+                    <input asp-for="measurementsModel.Units" value="metric" type="radio" id="metricUnits"
+                        checked="@(Model.measurementsModel.Units == "metric")" />
+                    <label for="metricUnits">Metric Units</label>
 
-                <div class="input-field">
-                    <input asp-for="bmrModel.Heightft" type="number" class="" min="0" value="@Model.bmrModel.Heightft">
-                    <span>ft</span>
                 </div>
-                <div class="input-field">
-                    <input asp-for="bmrModel.Heightin" type="number" class="" min="0" value="@Model.bmrModel.Heightin">
-                    <span>in</span>
-                </div>
-            </div>
 
-            <div class="row inactive" id="heightMetric">
-                <label for="">Height</label>
-                <div class="input-field">
-                    <input asp-for="bmrModel.Heightcm" type="number" class="" min="0" value="@Model.bmrModel.Heightcm">
-                    <span>cm</span>
-                </div>
-            </div>
+                <div class="row" id="heightUS">
+                    <label class="" for="">Height</label>
 
-            <div class="row" id="weightUS">
-                <label for="">Weight</label>
-                <div class="input-field">
-                    <input asp-for="bmrModel.Weightlbs" type="number" class="" min="0" value="@Model.bmrModel.Weightlbs">
-                    <span>lbs</span>
-                </div>
-            </div>
-
-            <div class="row inactive" id="weightKG">
-                <label for="">Weight</label>
-                <div class="input-field">
-                    <input asp-for="bmrModel.Weightkg" type="number" class="" min="0" value="@Model.bmrModel.Weightkg">
-                    <span>kg</span>
-                </div>
-            </div>
-
-            <div class="row" id="">
-                <label for="">Age</label>
-                <div class="input-field">
-                    <input asp-for="bmrModel.Age" type="number" class="" min="0" value="@Model.bmrModel.Age">
-                    <span>years</span>
-                </div>
-            </div>
-
-            <div class="row">
-                <label for="">Gender</label>
-                <div class="col">
-                    <div class="col">
-                        <label for="male">Male</label>
-                        <input asp-for="bmrModel.Gender" value="male" type="radio" id="male" checked = "@(Model.bmrModel.Gender == "male")" />
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Heightft" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Heightft">
+                        <span>ft</span>
                     </div>
-                    <div class="col">
-                        <label for="female">Female</label>
-                        <input asp-for="bmrModel.Gender" value="female" type="radio" id="female" checked = "@(Model.bmrModel.Gender == "female")">
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Heightin" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Heightin">
+                        <span>in</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <label for="">Activity Level</label>
+                <div class="row inactive" id="heightMetric">
+                    <label for="">Height</label>
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Heightcm" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Heightcm">
+                        <span>cm</span>
+                    </div>
+                </div>
 
-                <select asp-for="bmrModel.ActivityOption" id="" class="activity-levels">
-                    <option value="1">Sedentary (little or no exercise): BMR x 1.2
-                    </option>
-                    <option value="2">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
-                    </option>
-                    <option value="3">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
-                        1.55
-                    </option>
-                    <option value="4">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
-                    </option>
-                    <option value="5">Extra active (very hard exercise or sports, physical job or training twice a day):
-                        BMR × 1.9
-                    </option>
-                </select>
-            </div>
+                <div class="row" id="weightUS">
+                    <label for="">Weight</label>
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Weightlbs" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Weightlbs">
+                        <span>lbs</span>
+                    </div>
+                </div>
+
+                <div class="row inactive" id="weightKG">
+                    <label for="">Weight</label>
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Weightkg" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Weightkg">
+                        <span>kg</span>
+                    </div>
+                </div>
+
+                <div class="row" id="">
+                    <label for="">Age</label>
+                    <div class="input-field">
+                        <input asp-for="measurementsModel.Age" type="number" class="" min="0"
+                            value="@Model.measurementsModel.Age">
+                        <span>years</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="">Gender</label>
+                    <div class="col">
+                        <div class="col">
+                            <label for="male">Male</label>
+                            <input asp-for="measurementsModel.Gender" value="male" type="radio" id="male"
+                                checked="@(Model.measurementsModel.Gender == "male")" />
+                        </div>
+                        <div class="col">
+                            <label for="female">Female</label>
+                            <input asp-for="measurementsModel.Gender" value="female" type="radio" id="female"
+                                checked="@(Model.measurementsModel.Gender == "female")">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="">Activity Level</label>
+
+                    <select asp-for="measurementsModel.ActivityOption" id="" class="activity-levels">
+                        <option value="1">Sedentary (little or no exercise): BMR x 1.2
+                        </option>
+                        <option value="2">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375
+                        </option>
+                        <option value="3">Moderately active (moderate exercise or sports 3-5 days a week): BMR x
+                            1.55
+                        </option>
+                        <option value="4">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725
+                        </option>
+                        <option value="5">Extra active (very hard exercise or sports, physical job or training twice a
+                            day):
+                            BMR × 1.9
+                        </option>
+                    </select>
+                </div>
 
 
-            <button type="submit" class="calculate row">Calories</button>
+                <button type="submit" class="calculate row">Calories</button>
 
 
-        </form>
+            </form>
+
+        </div>
+
+
+        <div>
+
+            @{
+                if (@Model.IsFormSubmitted)
+                {
+
+                    <partial name="partialBMRResults" model="Model" />
+
+                }
+            }
+
+        </div>
 
     </div>
 
+    <div class="bottom-content">
 
-</div>
+        @{
+            if (@Model.IsFormSubmitted)
+            {
 
+                <partial name="partialBMIResults" model="Model" />
 
-<div>
-
-    @{
-        if (@Model.IsFormSubmitted)
-        {
-            <partial name="partialBMRResults" model="Model" />
+            }
         }
-    }
+
+    </div>
+
 
 </div>

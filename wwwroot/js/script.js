@@ -8,12 +8,12 @@ const heightMetric = document.querySelector("#heightMetric");
 const weigthUS = document.querySelector("#weightUS");
 const weigthKG = document.querySelector("#weightKG");
 
-const listofInputs = document.querySelectorAll("input[name='bmrModel.Units']");
+const listofInputs = document.querySelectorAll("input[name='measurementsModel.Units']");
 
 listofInputs.forEach(function (val, key){
-    
     if(val.getAttribute("checked") == "checked" && key == 0)
     {
+       
         heightUS.classList.remove("inactive");
         heightMetric.classList.add("inactive");
 
@@ -22,6 +22,7 @@ listofInputs.forEach(function (val, key){
     }
     else if(val.getAttribute("checked") == "checked" && key == 1)
     {
+        
         heightUS.classList.add("inactive");
         heightMetric.classList.remove("inactive");
     

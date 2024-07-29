@@ -1,0 +1,80 @@
+<div class="bmiContainer">
+
+
+    <table>
+        <th colspan="4">
+            <h1>Body Mass Index</h1>
+        </th>
+        <tr>
+            <td>Underweight < 18.5</td>
+            <td>Normal 18.5 - 24.9</td>
+            <td>Overweight 25 - 29.9</td>
+            <td>Obese > 30</td>
+        </tr>
+        <tr style="" class="bmiResultTR">
+            @{
+                string activeUnderWeight = "";
+                string activeNormal = "";
+                string activeOverweight = "";
+                string activeObese = "";
+
+                if (@Model.bmi <= 18.5)
+                {
+                    activeUnderWeight = "Active";
+                }
+                else if (@Model.bmi <= 24.9 && @Model.bmi > 18.5)
+                {
+                    activeNormal = "Active";
+                }
+                else if (@Model.bmi <= 29.9 && @Model.bmi > 24.9)
+                {
+                    activeOverweight = "Active";
+                }
+                else
+                {
+                    activeObese = "Active";
+                }
+            }
+            <td style="" class="@(activeUnderWeight)">
+
+                @{
+                    if (@Model.bmi <= 18.5)
+                    {
+                        <span>You''re BMI is @Model.bmi</span>
+                    }
+                }
+
+            </td>
+            <td style="" class="@(activeNormal)">
+
+                @{
+                    if (@Model.bmi <= 24.9 && @Model.bmi > 18.5)
+                    {
+                        <span>You''re BMI is @Model.bmi</span>
+                    }
+                }
+
+            </td>
+            <td style="" class="@(activeOverweight)">
+
+                @{
+                    if (@Model.bmi <= 29.9 && @Model.bmi > 24.9)
+                    {
+                        <span>You''re BMI is @Model.bmi</span>
+                    }
+                }
+            </td>
+            <td style="" class="@(activeObese)">
+
+                @{
+                    if (@Model.bmi > 30)
+                    {
+                        <span>You''re BMI is @Model.bmi</span>
+                    }
+                }
+
+            </td>
+        </tr>
+    </table>
+
+</div>
